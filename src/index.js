@@ -47,7 +47,7 @@ class Mailchimp extends React.Component {
             {...input}
             key={input.name}
             onChange={({ target }) => this.setState({ [input.name]: target.value })}
-            defaultValue={this.state[input.name]}
+            defaultValue={input.defaultValue}
           />
         )}
         <button
